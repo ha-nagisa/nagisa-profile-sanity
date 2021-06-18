@@ -107,7 +107,11 @@ export default createSchema({
         {
           name: 'date',
           title:'Date',
-          type:'datetime',
+          type:'date',
+          options: {
+            dateFormat: 'YYYY/MM/DD',
+            calendarTodayLabel: 'Today'
+          },
           validation:(Rule) => Rule.required() 
         },
         {
@@ -204,7 +208,11 @@ export default createSchema({
         {
           name: 'date',
           title:'Date',
-          type:'datetime',
+          type:'date',
+          options: {
+            dateFormat: 'YYYY/MM/DD',
+            calendarTodayLabel: 'Today'
+          },
           validation:(Rule) => Rule.required() 
         },
         {
